@@ -7,8 +7,10 @@ function App() {
 
   return (
     <>
-     <Profile></Profile>
+    <div className='bg-gray-100'>
+    <Profile></Profile>
      <Courses></Courses>
+    </div>
     
     </>
   )
