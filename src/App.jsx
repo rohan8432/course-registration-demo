@@ -1,6 +1,6 @@
 import Profile from './assets/Profile/Profile'
 import './App.css'
-import Cart from './Cart'
+import Courses from './Courses'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
      <Profile></Profile>
-      <Cart></Cart>
+     <Courses></Courses>
     
     </>
   )
