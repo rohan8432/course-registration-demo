@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import Courses from './Courses';
+
 
 const Courses = () => {
     const [courses, setCourses] = useState([])
@@ -10,8 +12,10 @@ const Courses = () => {
             .then(res => res.json())
             .then(data => setCourses(data));
     }, [])
-    console.log(courses)
    
+//   const handleCourseSelect=()=>{
+//     console.log('hello')
+//   }
     return (
 
         <div className="flex mx-20">
@@ -33,7 +37,7 @@ const Courses = () => {
                                     <p>{course.credit}</p>
                                 </div>
                                 <div className="text-center mb-3" >
-                                <button className="bg-blue-400 h-10 w-52 rounded-md text-white font-bold">Select</button>
+                                {/* <button onClick={handleCourseSelect} className="bg-blue-400 h-10 w-52 rounded-md text-white font-bold">Select</button> */}
                                 </div>
                             </div>
                     
