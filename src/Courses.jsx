@@ -20,6 +20,8 @@ const Courses = () => {
     }, []);
 
 
+    // step: 3  In this stage The data from course value are running
+
     const handleCourseSelect = (course) => {
         const isExist = selectedCourses.find((item) => item.id === course.id);
 
