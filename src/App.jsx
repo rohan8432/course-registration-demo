@@ -10,6 +10,7 @@ function App() {
     <div className='bg-gray-100'>
     <Profile></Profile>
      <Courses></Courses>
+    
     </div>
     
     </>

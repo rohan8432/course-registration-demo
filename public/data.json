@@ -3,84 +3,93 @@
       "name": "Introduction to C Programming",
       "description": "It is a long established fact that a reader will be          distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 15000",
+      "PriceValue": 15000,
       "credit": "Credit : 1hr",
       "ImageURL": "https://i.ibb.co/jVM8wHr/Rectangle-2-2.png",
       "id":1,
-      "remaining":"1hr"
+      "remaining":1
       
     },
     {
       "name": "Introduction to Algorithms",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 25000",
+      "PriceValue": 25000,
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/q78w9w5/Rectangle-2-3.png",
       "id":2,
-      "remaining":"2hr"
+      "remaining":2
     },
     {
       "name": "Introduction to C++ for DSA",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 10000",
+      "PriceValue": 10000,
       "credit": "Credit : 10hr",
       "ImageURL": "https://i.ibb.co/sRBvPH2/Rectangle-2-4.png",
       "id":3,
-      "remaining":"10hr"
+      "remaining":10
     },
     {
       "name": "Basic Data Structures",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 35000",
+      "PriceValue": 35000,
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/4Kkkky7/Rectangle-3.png",
       "id":4,
-      "remaining":"5hr"
+      "remaining":5
     },
     {
       "name": "Introduction to OOP Python",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 19000",
+      "PriceValue": 19000,
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/3yfyJzk/Rectangle-2.png",
       "id":5,
-      "remaining":"5hr"
+      "remaining":5
 
     },
     {
       "name": "Software Engineering",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 23000",
+      "PriceValue": 23000,
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/58VTVLL/Rectangle-2-5.png",
       "id":6,
-      "remaining":"2hr"
+      "remaining":2
     },
     {
       "name": "AWS, Cloud Computing",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 35000",
+      "PriceValue": 35000,
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/30sPtwL/Rectangle-3-1.png",
       "id":7,
-      "remaining":"5hr"
+      "remaining":5
     },
     {
       "name": "Database ,MySQL",
       "description": "It is a long established fact that a reader will be          distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 19000",
+      "PriceValue": 19000,
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/pWN4PyZ/Rectangle-2-1.png",
       "id":8,
-      "remaining":"5hr"
+      "remaining":5
 
     },
     {
       "name": "Problem-Solving Part",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       "price": "$ Price : 23000",
+      "PriceValue": 23000,
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/Kw9WhmJ/Rectangle-2-6.png",
       "id":9,
-      "remaining":"2hr"
+      "remaining":2
     }
   ]

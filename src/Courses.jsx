@@ -1,34 +1,50 @@
 
+
 import React, { useEffect, useState } from "react";
 import Cart from "./Cart";
+
+// step:1  In this stage I am going to show how to hold data
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
-    const [remaining, setRemaining] = useState([]);
-    
-
+    const [remaining, setRemaining] = useState(0);
+    const [priceValue, setPriceValue] = useState(0);
+    const [remainValue, setRemainValue] = useState(20);
+ 
+    // step 2: In this stage The data are loaded using fetch
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setCourses(data));
     }, []);
 
+
     const handleCourseSelect = (course) => {
-        const isExist = selectedCourses.find((item)=>item.id===course.id);
-        let count = course.remaining;
-        if(isExist){
-          return alert('Already exist');
-        }
-        else{
-             const newCredit = remaining + course.remaining;
-             if(newCredit > 20){
-                alert("Cannot take")
-             }
-            console.log(newCredit)
-            setSelectedCourses([...selectedCourses, course]);
-        }
+        const isExist = selectedCourses.find((item) => item.id === course.id);
+
+        if (isExist) {
+            return alert('Already exist');
+        } else {
+            const totalRemaining = course.remaining + remaining;
+            const totalPrice = course.PriceValue + priceValue;
+
+            if (totalRemaining <= remainValue) {
+                setRemaining(totalRemaining);
+                setPriceValue(totalPrice);
+
+            
+                const remainingValue = remainValue - totalRemaining;
+                
         
+                const CurrentRemainValue = Math.max(remainingValue, 0);
+                
+                setRemainValue(CurrentRemainValue);
+                setSelectedCourses([...selectedCourses, course]);
+            } else {
+                alert("Cannot take - Not enough credits for taking course");
+            }
+        }
     };
 
 
@@ -47,6 +63,7 @@ const Courses = () => {
                                 <p>{course.price}</p>
                                 <p>{course.credit}</p>
                             </div>
+
                             <div className="text-center mb-3">
                                 <button onClick={() => handleCourseSelect(course)} className="bg-blue-400 h-10 w-52 rounded-md text-white font-bold">Select</button>
                             </div>
@@ -55,10 +72,14 @@ const Courses = () => {
                 ))}
             </div>
             <div>
-                <Cart selectedCourses={selectedCourses} remaining={remaining}></Cart>
+                <Cart selectedCourses={selectedCourses} remaining={remaining} priceValue={priceValue} remainValue={remainValue}></Cart>
             </div>
         </div>
     );
 };
 
 export default Courses;
+
+
+
+
