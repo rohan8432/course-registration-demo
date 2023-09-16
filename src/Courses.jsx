@@ -49,6 +49,8 @@ const Courses = () => {
         }
     };
 
+// step: 4  In this stage, Carts are made through fake data
+
 
     return (
         <div className="flex mx-20">
@@ -66,6 +68,7 @@ const Courses = () => {
                                 <p>{course.credit}</p>
                             </div>
 
+{/* step: 5 Int this stage using a clickable button for select course */}
                             <div className="text-center mb-3">
                                 <button onClick={() => handleCourseSelect(course)} className="bg-blue-400 h-10 w-52 rounded-md text-white font-bold">Select</button>
                             </div>
