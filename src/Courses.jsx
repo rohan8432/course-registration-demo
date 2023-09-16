@@ -5,6 +5,8 @@ import Cart from "./Cart";
 const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
+    const [remaining, setRemaining] = useState([]);
+    
 
     useEffect(() => {
         fetch('data.json')
@@ -13,10 +15,22 @@ const Courses = () => {
     }, []);
 
     const handleCourseSelect = (course) => {
-        setSelectedCourses([...selectedCourses, course]);
+        const isExist = selectedCourses.find((item)=>item.id===course.id);
+        let count = course.remaining;
+        if(isExist){
+          return alert('Already exist');
+        }
+        else{
+             const newCredit = remaining + course.remaining;
+             if(newCredit > 20){
+                alert("Cannot take")
+             }
+            console.log(newCredit)
+            setSelectedCourses([...selectedCourses, course]);
+        }
+        
     };
 
-    // console.log(selectedCourses);
 
     return (
         <div className="flex mx-20">
@@ -41,7 +55,7 @@ const Courses = () => {
                 ))}
             </div>
             <div>
-                <Cart selectedCourses={selectedCourses}></Cart>
+                <Cart selectedCourses={selectedCourses} remaining={remaining}></Cart>
             </div>
         </div>
     );

@@ -8,7 +8,7 @@
 //         <div>
 //            {
 //             selectedCourses.map((course=>{
-                
+
 //             }))
 //            }
 //         </div>
@@ -20,25 +20,23 @@
 
 import React from 'react';
 
-const Cart = ({ selectedCourses }) => {
+const Cart = ({ selectedCourses, remaining }) => {
     return (
-        <div className='w-64 h-80 bg-red-300 ml-3'>
-            <div>
-                <h3 className='text-center'>Course hour remaining 20 hr</h3>
-            </div>
-            <hr />
-            <div>
-                <h3 className='font-bold pl-4'>Course name</h3>
-            </div>
-            {
-                selectedCourses.map((course) => (
-                  <div key={course.id}>
-                    <h2>{course.name}</h2>
-                  </div>
-                ))
-            }
+        <div className='bg-red-300 ml-3 rounded-md w-64 h-80'>
+           <h3>Credit Hour Remaining: {remaining}</h3>
+             {
+                selectedCourses.map((course=>(
+                    <div key={course.id}>
+                     
+                        <h2>{course.name}</h2>
+                    </div>
+                )))
+             }
         </div>
+
+          
+                
     );
 };
 
-export default Cart;
+            export default Cart;

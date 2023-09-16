@@ -5,7 +5,8 @@
       "price": "$ Price : 15000",
       "credit": "Credit : 1hr",
       "ImageURL": "https://i.ibb.co/jVM8wHr/Rectangle-2-2.png",
-      "id":1
+      "id":1,
+      "remaining":"1hr"
       
     },
     {
@@ -14,7 +15,8 @@
       "price": "$ Price : 25000",
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/q78w9w5/Rectangle-2-3.png",
-      "id":2
+      "id":2,
+      "remaining":"2hr"
     },
     {
       "name": "Introduction to C++ for DSA",
@@ -22,7 +24,8 @@
       "price": "$ Price : 10000",
       "credit": "Credit : 10hr",
       "ImageURL": "https://i.ibb.co/sRBvPH2/Rectangle-2-4.png",
-      "id":3
+      "id":3,
+      "remaining":"10hr"
     },
     {
       "name": "Basic Data Structures",
@@ -30,7 +33,8 @@
       "price": "$ Price : 35000",
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/4Kkkky7/Rectangle-3.png",
-      "id":4
+      "id":4,
+      "remaining":"5hr"
     },
     {
       "name": "Introduction to OOP Python",
@@ -38,7 +42,8 @@
       "price": "$ Price : 19000",
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/3yfyJzk/Rectangle-2.png",
-      "id":5
+      "id":5,
+      "remaining":"5hr"
 
     },
     {
@@ -47,7 +52,8 @@
       "price": "$ Price : 23000",
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/58VTVLL/Rectangle-2-5.png",
-      "id":6
+      "id":6,
+      "remaining":"2hr"
     },
     {
       "name": "AWS, Cloud Computing",
@@ -55,7 +61,8 @@
       "price": "$ Price : 35000",
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/30sPtwL/Rectangle-3-1.png",
-      "id":7
+      "id":7,
+      "remaining":"5hr"
     },
     {
       "name": "Database ,MySQL",
@@ -63,7 +70,8 @@
       "price": "$ Price : 19000",
       "credit": "Credit : 5hr",
       "ImageURL": "https://i.ibb.co/pWN4PyZ/Rectangle-2-1.png",
-      "id":8
+      "id":8,
+      "remaining":"5hr"
 
     },
     {
@@ -72,6 +80,7 @@
       "price": "$ Price : 23000",
       "credit": "Credit : 2hr",
       "ImageURL": "https://i.ibb.co/Kw9WhmJ/Rectangle-2-6.png",
-      "id":9
+      "id":9,
+      "remaining":"2hr"
     }
   ]
