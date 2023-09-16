@@ -21,17 +21,15 @@ const Cart = ({ selectedCourses, remaining, priceValue, remainValue }) => {
                 )))
              }
               <hr className='mb-3' />
-             <h3 className='mt-16 font-bold text-gray-400'>Total Credit: {remaining} hr</h3>
+             <h3 className='mt-16 font-bold text-gray-400 mb-3'>Total Credit: {remaining} hr</h3>
              <hr className='mb-3' />
              <h3 className='font-bold text-gray-400' >Total price value: {priceValue} USD</h3>
         </div>
-
-          
-                
+        
     );
 };
 
-            export default Cart;
+      export default Cart;
 
 
 

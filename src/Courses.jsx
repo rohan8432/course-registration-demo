@@ -1,7 +1,8 @@
 
-
 import React, { useEffect, useState } from "react";
 import Cart from "./Cart";
+
+
 
 // step:1  In this stage I am going to show how to hold data
 
@@ -54,18 +55,21 @@ const Courses = () => {
 
     return (
         <div className="flex mx-20">
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                 {courses.map(course => (
                     <div key={course.id}>
                         <div className="w-64 p-3 bg-white rounded-md h-[350px]">
                             <div>
                                 <img src={course.ImageURL} alt="" className="mb-3" />
                             </div>
-                            <h3 className="text-center mb-3">{course.name}</h3>
+                            <h3 className="text-center mb-3 font-semibold">{course.name}</h3>
                             <p className="mb-3"><small>{course.description}</small></p>
-                            <div className="flex justify-evenly mb-3">
-                                <p>{course.price}</p>
-                                <p>{course.credit}</p>
+                            <div className="flex justify-between mb-3">
+                                <p className="font-semibold">{course.price}</p>
+                                <img src={course.icon} className="h-5 w-5 mt-1" alt="" />
+                                <p className="font-semibold">{course.credit}</p>
+                              
+                               
                             </div>
 
 {/* step: 5 Int this stage using a clickable button for select course */}
